@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Buttons</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+         $('.test').on('click', function(){
+         $(this).parent().append( $('.test')[0] );
+         });
+    </script>
+
+
+    <style>
+        .buttons {
+          display: inline-flex;
+          flex-direction: column;
+        }
+        .test { margin: 3px; }
+    </style>
+
+</head>
+
+<body>
+<div class="buttons">
+    <button class="test">1</button>
+    <button class="test">2</button>
+    <button class="test">3</button>
+</div>
+</body>
+</html>
